@@ -1,0 +1,26 @@
+/**************** APPLIES TO ***************
+URLs starting with:
+    /*https://keep.google.com*/
+/**************** APPLIES TO **************/
+
+body {
+	background: #1f1f1f;
+	color: #000000;
+}
+
+.gb_ae, .gb_Ta:not(.gb_Ua) .gb_Ed {
+	color: #000 !important;
+	background: #e0e0e0 !important;
+}
+
+.gb_sc .gb_qc, .gb_rc, .gb_vc, .gb_wc, .gb_xc, .gb_yc, .gb_Xa svg, .gb_oc svg, .Q0hgme-fmcmS-LgbsSe, .hSRGPd-haAclf .hSRGPd, .JNdkSc-tJHJj {
+	color: #cacaca;
+}
+
+.gb_ce, .gb_de, .gb_fc svg, svg.gb_he, svg.gb_ge, .gb_jc > svg, .gb_Qe button > svg, .gb_Me button svg, .gb_Me button img {
+	color: #000 !important;
+}
+
+.IZ65Hb-TBnied {
+	filter: brightness(80%);
+}

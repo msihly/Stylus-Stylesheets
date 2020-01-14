@@ -1,0 +1,99 @@
+/**************** APPLIES TO ***************
+URLs starting with:
+    https://www.vsco.co/
+URLs on the domain:
+    vsco.co
+/**************** APPLIES TO **************/
+
+/* NAVIGATION */
+.NavSearchButton, .Header-followingBtn, .Nav-cart, .Nav-loggedInOptions, svg:not(:root), .DetailViewMetaCollapsible-button {
+	filter: invert(100%);
+}
+
+.Nav-text > a, h1, h2, h3, h4, h5, h6 {
+	color: #d4d4d4 !important;
+}
+
+/* FEED */
+article, .Footer {
+	display: none;
+}
+
+body, .MediaModal {
+	background: #0c0c0c !important;
+}
+
+a {
+	color: #ff4a12 !important;
+}
+
+.MediaThumbnailCaption-title {
+	color: #963900 !important;
+}
+
+.container, .css-1vgyuuf, .css-mpzus6 {
+	width: 100%;
+}
+
+.Feed {
+	max-width: none;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.css-rco518-Container {
+	width: 100%;
+}
+
+.grid-item {
+	box-sizing: content-box;
+}
+
+.Feed .grid-item {
+	margin: 0;
+	align-self: flex-start;
+}
+
+.Feed .grid--withGutter .grid-item {
+	padding: 0px;
+}
+
+.Feed .MediaThumbnailCaption {
+	height: auto;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.grid-item * > .MediaImage.relative {
+	max-height: 400px;
+	overflow: hidden;
+	transition: all .4s ease-in-out;
+}
+
+.grid-item * > .MediaImage.relative:hover {
+	max-height: 1000px;
+	overflow: visible;
+}
+
+.DetailViewPermalink {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* SEARCH */
+input[type=search] {
+	background: #292929;
+	border: 1px solid #333;
+	color: #dfdfdf;
+	padding: 5px;
+}
+
+input:-webkit-autofill {
+	box-shadow: inset 0 0 0 624.9375rem #5a81a9;
+}
+
+.SearchFormInput-clearButton {
+	bottom: unset;
+	margin: 10px 5px 10px 5px;
+}

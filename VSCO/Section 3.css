@@ -1,0 +1,25 @@
+/**************** APPLIES TO ***************
+URLs matching the regexp:
+    https?:\/\/vsco.co\/.*\/collection\/.*?
+/**************** APPLIES TO **************/
+
+/* COLLECTION */
+#root > div > section > div > div > section > ul > li:nth-child(n) {
+	align-items: flex-start !important;
+	margin-bottom: 20px !important;
+}
+
+#root > div > section > div > div > section > ul > li:nth-child(n) > div:nth-child(n) {
+	margin-bottom: 0 !important;
+}
+
+.MediaImage.relative {
+	max-height: 400px;
+	overflow: hidden;
+	transition: all .4s ease-in-out;
+}
+
+.MediaImage.relative:hover {
+	max-height: 1000px;
+	overflow: visible;
+}

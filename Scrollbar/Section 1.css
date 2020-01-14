@@ -1,0 +1,22 @@
+/**************** APPLIES TO ***************
+    Everything
+/**************** APPLIES TO **************/
+
+::-webkit-scrollbar {
+	width: 15px;
+	height: 10px;
+	background: #0000009e;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+	background: #0000009e;
+}
+
+::-webkit-scrollbar-thumb {
+	min-height: 28px;
+	background: #444444c2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #444444e8;
+}

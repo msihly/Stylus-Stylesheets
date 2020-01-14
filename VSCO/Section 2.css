@@ -1,0 +1,21 @@
+/**************** APPLIES TO ***************
+URLs matching the regexp:
+    https?:\/\/vsco.co\/.*\/(images|journal|collection)\/.*?
+/**************** APPLIES TO **************/
+
+/* PROFILES */
+#root > div > section > div > div:nth-child(2), #root > div > section > div > div:nth-child(3) {
+	display: none !important;
+}
+
+#root > div > section > div > div:nth-child(1) > div:nth-child(1) {
+	padding: 10px 0 !important;
+}
+
+#root > div > section > div > div:nth-child(1) > div:nth-child(2), #root > div > section > div > div:nth-child(5) > nav {
+	padding: 20px 0 !important;
+}
+
+.MediaImage.relative, li {
+	margin: 0 !important;
+}

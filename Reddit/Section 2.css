@@ -1,0 +1,264 @@
+/**************** APPLIES TO ***************
+URLs starting with:
+    https://www.reddit.com
+URLs on the domain:
+    reddit.com
+/**************** APPLIES TO **************/
+
+/*Nightmode*/
+html, body {
+	color: #dfdfdf;
+}
+
+body {
+	background-color: #0c0c0c;
+}
+
+body > .content {
+	margin: 0 352px 0px 8px !important;
+	padding-top: 0;
+}
+
+body.with-listing-chooser > .content {
+	margin-left: 130px !important;
+}
+
+body.listing-page>.content, body.other-discussions-page>.content, .comments-page .link, .commentarea>.sitetable>.comment, #images, .combined-search-page>.content, .sponsorshipbox, .commentarea>.usertext, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side {
+	background-color: #0c0c0c!important;
+	border-radius: 10px !important;
+}
+
+p.parent, .res-expando-siteAttribution > a:first-of-type {
+	color: #98abba;
+}
+
+.noncollapsed.even.comment {
+	background-color: #111 !important;
+}
+
+.res-commentBoxes .comment .comment, .res-commentBoxes .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	background-color: #131313!important;
+	border-radius: 0 !important;
+}
+
+.res-commentBoxes .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	background-color: #0c0c0c!important;
+	border-radius: 0 !important;
+}
+
+.res .commentarea .thing {
+	border: 1px solid #31313c!important;
+	border-radius: 0 !important;
+}
+
+.titlebox form.toggle, .leavemoderator, .comments-page .side .linkinfo, .listing-page .comment, .res .NERPageMarker, .md code, .sitetable, .res #progressIndicator, .trophy-area .content, .res-searchHelper-searchPageTabs .combined-search-page #previoussearch .res-search-pane, .new-comment .md :not(pre)>code, .link .md :not(pre)>code, .usertext.border .md :not(pre)>code, .new-comment .md pre, .link .md pre, .usertext.border .md pre {
+	background-color: #0c0c0c!important;
+}
+
+.pinnable-content.pinned {
+	background-color: #0c0c0c !important;
+	border-bottom: 1px solid #171717;
+}
+
+.link.even {
+	background-color: #0f0f0f !important;
+}
+
+.entry.res-selected, .entry.res-selected .md-container, .RES-keyNav-activeThing.res-selected, .comment.RES-keyNav-activeThing.res-selected, .res-commentBoxes .comment .comment .comment[class*="res-selected"], .res-commentBoxes .comment .comment .comment .comment[class*="res-selected"], .res-commentBoxes .comment .comment .comment .comment .comment[class*="res-selected"], .res-commentBoxes .comment .comment .comment .comment .comment .comment[class*="res-selected"], .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment[class*="res-selected"], .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment[class*="res-selected"], .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment[class*="res-selected"] {
+	background-color: #000 !important;
+}
+
+.commentarea .res-expando-box div.usertext-body .md, .res-expando-box[data-host="wikipedia"] .md table {
+	background-color: #171717;
+	border-color: #292929;
+}
+
+.res-iframe-expando-drag-handle .res-icon::before {
+	filter: invert(1);
+}
+
+.RESUserTag > a.userTagLink.hasTag.truncateTag {
+	filter: invert(0);
+}
+
+a.userTagLink.hasTag.truncateTag {
+	filter: invert(0.5);
+}
+
+span.RESUserTag {
+	color: #f00;
+}
+
+.md {
+	font-size: 1.15em;
+}
+
+.md td, .md th, .md code, .md pre {
+	border-color: #444;
+}
+
+.md blockquote {
+	color: #bfcbd4;
+	border-radius: 5px;
+}
+
+.md, .comment .usertext .md, .side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol, .titlebox .users-online .number, .link .usertext .md, .res-gallery, .res-gallery-slideshow, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .gadget .score, .titlebox, .trophy-name {
+	color: #b1b1b1!important;
+}
+
+.search-result-body {
+	color: #738491;
+}
+
+.combined-search-page .search-result-listing .search-result-subreddit {
+	border: none;
+}
+
+.comments-page .side .linkinfo .score {
+	color: #47515a;
+}
+
+.spoiler-stamp {
+	color: #d82424;
+}
+
+.res-fancy-toggle-button, .fancy-toggle-button .add, .blueButton {
+	border-radius: 0;
+	border: 1px solid #00456f;
+	background: #009fff;
+}
+
+.expando-button.video.collapsed::after {
+	content: "";
+}
+
+.nsfw-stamp acronym {
+	background-color: #d82424;
+	border-color: #d82424;
+}
+
+.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4 {
+	background-color: #1f1f1f;
+}
+
+.titlebox:before, .md-container-small .md h5, .side .md h5, .md-container-small .md h6, .side .md h6 {
+	color: #6b839a;
+}
+
+.comment .author, .link .entry .tagline a.author {
+	color: #f36700;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.top-page .menuarea, .dropdown.lightdrop .selected, table {
+	color: #edf1f3;
+}
+
+.link .entry .tagline a {
+	color: #009fff;
+}
+
+.linkinfo .shortlink {
+	color: #c4c9ce;
+	font-size: 100%;
+}
+
+.md pre {
+	background-color: #020202;
+}
+
+.usertext.border .usertext-body {
+	background-color: #3c4c4e;
+}
+
+.RESSubscriptionButton, .intro {
+	display: none;
+}
+
+.morelink, .side .titlebox .md h3 a, .drop-choices a.choice:hover, .submit-page #newlink.submit.content ul.tabmenu.formtab, .submit_text.enabled.roundfield, body .btn, body button {
+	background-color: #0a68a2;
+}
+
+div.listing-chooser.initialized {
+	background-color: #040404;
+}
+
+.listing-chooser li {
+	background-color: #1b1b1b;
+	border-color: #1b1b1b;
+}
+
+.listing-chooser li.selected {
+	background-color: #1c1c1c;
+	border-color: #1c1c1c;
+}
+
+.grippy {
+	background-color: #111111 !important;
+	border-color: #1e1e1e;
+	border-left: 1px solid #0a68a2 !important;
+	z-index: auto !important;
+}
+
+body.with-listing-chooser .listing-chooser {
+	background-color: #040404!important;
+}
+
+.content .thing .title:visited, .content .thing.visited .title, .md a:visited, .res-styleTweaks-visitedStyle .md a:visited {
+	color: #c504d0;
+}
+
+.expando-button, .expando-button.image, .expando-button.video-muted {
+	background-color: #d0d0d0!important;
+	border: 1px solid #d0d0d0!important;
+}
+
+#search input[type=text] {
+	background-color: #2f2f2f;
+	color: #cbd8e0 !important;
+}
+
+#search #searchexpando {
+	background-color: #232323;
+	color: #cbd8e0;
+}
+
+.crosspost-preview {
+	background: inherit;
+	border: 1px solid #5a5a5a;
+}
+
+a[href$="spoiler"], a[href$="/spoiler"], a[href$="#spoiler"], a[href$="#spoilers"], a[href$="/s"], a[href$="#s"] {
+	background: #313131;
+	color: #313131 !important;
+}
+
+a[href$="spoiler"]:hover, a[href$="/spoiler"]:hover, a[href$="#spoiler"]:hover, a[href$="#spoilers"]:hover, a[href$="/s"]:hover, a[href$="#s"]:hover {
+	color: #b1b1b1 !important;
+}
+
+#srList {
+	background: #0c0c0c;
+	font-size: 12px;
+	border: 1px solid #6d6d6d;
+	border-radius: 5px;
+}
+
+#srList tr {
+	border-bottom: none;
+}
+
+#srList tr:nth-child(even) {
+	background: #1b1b1b;
+}
+
+#srList tr:hover, #srList tr:nth-child(even):hover {
+	background: #353535;
+}
+
+.search-expando.collapsed:before {
+	background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,#182d3e 100%);
+	max-width: 65em;
+	border-radius: 5px;
+}
