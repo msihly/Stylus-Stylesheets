@@ -1,0 +1,234 @@
+.link {
+    margin: 0;
+    padding: 16px 0 16px 16px;
+    position: relative;
+
+    &.promotedlink.promoted {
+        background-color: #EFF7FF;
+        padding: 16px 0;
+
+        .thumbnail {
+            height: auto;
+
+            img {
+                max-height: none;
+                max-width: none;
+                min-width: 0;
+                min-height: 0;
+            }
+        }
+    }
+
+    &.last-clicked {
+        left: -16px;
+        margin-right: -32px;
+        padding-left: 16px;
+        background-color: rgba(black, 0.04);
+        border: none;
+    }
+
+    &.compressed {
+        margin: 0;
+
+        .entry { padding: 11px 32px 9px 0; }
+
+        .title { margin: 0; }
+    }
+
+    .usertext .md {
+        margin-top: 12px;
+        margin-bottom: -12px;
+        padding-top: 12px;
+        padding-left: 0;
+        background-color: transparent;
+        border: 0 solid;
+        border-top: 1px solid @white-3;
+        border-radius: 0;
+        color: #292f34
+    }
+
+    .title {
+        margin: 0;
+        font-size: 13.5pt;
+        font-family: Arial, sans-serif;
+        transition: all .15s ease;
+        overflow: visible;
+    }
+
+    .domain {
+        visibility: hidden;
+
+        a {
+            visibility: visible;
+            position: relative;
+            top: -2px;
+            padding: 0.3em 0.4em;
+            border-radius: 4px;
+            background-color: @black-2;
+            color: @red-3;
+            font-size: 12px;
+            font-weight: 600;
+            opacity: 0.7;
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .midcol {
+        width: 32px !important;
+        margin: 0 16px 0 0;
+        overflow: visible;
+        height: 56px;
+    }
+
+    .score {
+        line-height: 16px;
+        font-size: 12px;
+        text-align: center;
+        margin: 1px -100%;
+
+        &.likes { color: @orange-2; }
+
+        &.dislikes { color: @blue-1; }
+    }
+
+    .entry {
+        padding: 0;
+        margin: 0;
+        max-width: 960px;
+
+        .buttons li {
+            margin-right: 0.5rem;
+            padding: 0.2em 0.5em;
+            border-radius: 4px;
+            background-color: @black-2 !important;
+            text-transform: capitalize;
+
+            &.nsfw-stamp {
+                padding: 0;
+                border-radius: 0;
+                border: none !important;
+            }
+
+            &.reported-stamp {
+                background-color: transparent;
+                border: 1px solid @white-3 !important;
+                border-radius: 2px;
+                color: #292f34;
+                line-height: 17px
+            }
+
+            a {
+                color: @white-3;
+                font-weight: 400;
+                font-size: 13px;
+                font-family: Arial, sans-serif;
+                transition: all .15s ease;
+
+                &:hover, &.comments, &.flairselectbtn { color: @red-3; }
+
+                &:hover {
+                    text-decoration: none;
+                    filter: saturate(250%);
+                }
+
+                &.comments {
+                    font-weight: 700 !important;
+                    transition: all .25s ease-in-out !important;
+                }
+            }
+
+            .redditSingleClick {
+                padding: 0 1px;
+                color: @white-1;
+                font-weight: 400;
+                font-size: 13px;
+                font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+                transition: all .15s ease;
+            }
+        }
+
+        .tagline {
+            margin: 1px 0 0.5rem 0;
+            color: @white-1;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+
+            &:first-letter { text-transform: capitalize; }
+
+            a {
+                color: @red-3;
+
+                &:hover {
+                    color: @red-3;
+                    text-decoration: none;
+                    filter: saturate(250%);
+                }
+
+                &.author { margin-right: inherit; }
+            }
+
+            time { cursor: help; }
+
+            .userattrs {
+                visibility: hidden;
+
+                a {
+                    visibility: visible;
+                    font-size: 10px;
+                    padding: 1px 3px 1px 2px;
+                    margin-left: 2px;
+                    background-color: red;
+                    color: white!important;
+                    position: relative;
+                    top: -1px;
+                    cursor: help;
+
+                    &.moderator { background-color: @green-3; }
+                }
+            }
+        }
+
+        li .comments:hover { text-decoration: none; }
+    }
+
+    .flat-list {
+        padding: 0;
+        margin-top: 3px;
+    }
+}
+
+.linkflair {
+    &label {
+        padding: 1px 6px;
+        height: 18px;
+        border-radius: 3px;
+        border: 0 solid;
+        color: white;
+        font-weight: 700;
+        font-style: normal;
+        font-variant: normal;
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        cursor: default;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+        background-color: @white-1;
+    }
+
+    &-mod {
+        .linkflairlabel {
+            background-color: @green-3;
+            color: white;
+        }
+
+        a { color: @green-3 !important; }
+
+        .thumbnail.default, .thumbnail.self { background: url(https://i.imgur.com/piXtXh1.png) -96px -48px !important; }
+    }
+}

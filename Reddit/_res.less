@@ -1,0 +1,388 @@
+.res {
+    &-expando-box {
+        .commentarea & div.usertext-body .md, &[data-host="wikipedia"] .md table {
+            background-color:@black-2;
+            border-color: @black-3
+        }
+    }
+
+    &-iframe-expando-drag-handle .res-icon::before {
+        filter: invert(1);
+    }
+
+    &-keyNav-activeThing.res-selected {
+        &:extend(.comment&);
+        background-color: black !important;
+    }
+
+    &-commentBoxes {
+        &&-rounded .comment {
+            border-radius: 8px !important;
+        }
+
+        .comment {
+            @c: .comment;
+            @cc: @c @c;
+
+            border: none !important;
+
+            &,
+            @{c},
+            @{cc},
+            @{cc} @{c},
+            @{cc} @{cc},
+            @{cc} @{cc} @{c},
+            @{cc} @{cc} @{cc},
+            @{cc} @{cc} @{cc} @{c},
+            @{cc} @{cc} @{cc} @{cc} {
+                position: relative;
+                margin-top: 0.8rem !important;
+                padding: 0.8rem 0.5rem !important;
+                border-left: 3px solid @black-1 !important;
+                border-radius: 8px !important;
+                background-color: @black-1 !important;
+                transition: 0.2s all ease-in-out;
+
+                &.res-selected { background-color: black !important; }
+
+                .expand { transition: 0.2s all ease-in-out; }
+            }
+
+            @{c},
+            @{c} @{cc},
+            @{c} @{cc} @{cc},
+            @{c} @{cc} @{cc} @{cc},
+            @{c} @{cc} @{cc} @{cc} @{cc} {
+                border-left-color: @black-2 !important;
+                background-color: @black-2 !important;
+            }
+
+            &,
+            @{cc} @{cc} @{cc} {
+                border-left-color: @red-2 !important;
+                .expand:hover { background: linear-gradient(to right, @red-2, transparent) !important; }
+            }
+
+            @{c},
+            @{cc} @{cc} @{cc} @{c} {
+                border-left-color: @orange-2 !important;
+                .expand:hover { background: linear-gradient(to right, @orange-2, transparent) !important; }
+            }
+
+            @{c} @{c},
+            @{cc} @{cc} @{cc} @{cc} {
+                border-left-color: @yellow-2 !important;
+                .expand:hover { background: linear-gradient(to right, @yellow-2, transparent) !important; }
+            }
+
+            @{c} @{cc},
+            @{cc} @{cc} @{cc} @{cc} @{c} {
+                border-left-color: @green-2 !important;
+                .expand:hover { background: linear-gradient(to right, @green-2, transparent) !important; }
+            }
+
+            @{c} @{cc} @{c},
+            @{cc} @{cc} @{cc} @{cc} @{cc} {
+                border-left-color: @blue-2 !important;
+                .expand:hover { background: linear-gradient(to right, @blue-2, transparent) !important; }
+            }
+
+            @{c} @{cc} @{cc},
+            @{cc} @{cc} @{cc} @{cc} @{cc} @{c} {
+                border-left-color: @purple-2 !important;
+                .expand:hover { background: linear-gradient(to right, @purple-2, transparent) !important; }
+            }
+        }
+    }
+
+    &DropdownList {
+        border-color: @blue-2;
+        box-shadow: 0 1px 5px rgba(black, 0.3);
+        margin-top: 4px;
+        margin-right: 8px;
+
+        li {
+            color: white;
+            background-color: @blue-2;
+            border-color: @blue-2;
+            transition: all .15s ease;
+
+            &:first-letter { text-transform: capitalize; }
+
+            &:hover, a:hover {
+                color: white;
+                background-color: @blue-3;
+            }
+        }
+
+        a, a:visited { color: white; }
+    }
+
+    &UserTagImage {
+        height: 10px !important;
+        background-image: url(https://i.imgur.com/piXtXh1.png) !important;
+        background-position: -32px -101px !important;
+        opacity: .25 !important;
+        margin-left: 2px !important;
+        transition: opacity .15s ease;
+        margin-top: 1px !important;
+
+        &:hover { opacity: 1 !important; }
+    }
+
+    &-keyNav-activeElement {
+        &:extend(& .md-container);
+        background-color: transparent !important;
+        outline: 0 dashed #EEE !important;
+        transition: all .15s ease;
+    }
+
+    &.search-page #header .tabmenu { display: none !important; }
+
+    .entry { transition: all 0.1s ease; }
+
+    .commentarea {
+        .entry .flat-list {
+            margin: 0.8rem 0 0 0;
+            padding: 0;
+        }
+
+        > .usertext {
+            margin-top: -76px;
+            padding-top: 80px !important;
+        }
+
+        .panestack-title {
+            margin-top: 0;
+            padding-top: 12px;
+        }
+    }
+
+    .thing .tagline .author {
+        &.submitter {
+            padding: 1px 4px;
+            border-radius: 1px;
+            background-color: @blue-2 !important;
+            box-shadow: 0 0 0 rgba(black, 0);
+            transition: all .15s ease;
+
+            &:hover {
+                box-shadow: 0 2px 4px rgba(black, 0.2);
+                background-color: @blue-2 !important;
+            }
+        }
+
+        &.moderator {
+            padding: 1px 4px;
+            border-radius: 1px;
+            background-color: @green-3 !important;
+            color: @white-3 !important;
+        }
+    }
+
+    .link .tagline a.voteWeight { background-color: transparent !important; }
+
+    .srSep { color: rgba(white, 0.45); }
+
+    .sitetable .sitetable { margin-right: 0 }
+
+    a.beta-link { top: 4px; }
+
+    .titlebox .tagline { margin-top: 6px; }
+
+    .NERPageMarker {
+        border-radius: 0;
+        border: none;
+        background-color: @black-1;
+        padding: 16px 0;
+        margin: 0
+    }
+
+    #header-bottom-right {
+        top: 1px;
+        border-radius: 0;
+        height: 18px;
+        padding: 0 8px 0 0;
+
+        .user {
+            font-size: 0;
+
+            a { font-size: 11px; }
+
+            .userkarma { display: none; }
+        }
+    }
+
+    #userbarToggle {
+        background-color: transparent;
+        color: rgba(white, 0.45);
+        border-radius: 0;
+        border: none;
+        left: -32px;
+    }
+
+    #sr-header-area a.RESShortcutsCurrentSub, #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
+        color: white!important;
+        border-bottom: 2px solid white;
+    }
+
+    #progressIndicator {
+        width: inherit;
+        border-radius: 0;
+        border: none;
+        padding: 16px;
+        margin: 16px 0;
+        color: @white-1;
+        background-color: @black-1;
+        height: inherit;
+
+        h2 { color: @white-2; }
+    }
+
+    #search #searchexpando {
+        box-shadow: 0 2px 6px rgba(black, 0.2);
+        height: auto;
+
+        label { padding: 13px 0; }
+    }
+
+    #searchexpando .searchexpando-submit, .comment.collapsed a.expand::after { display: none; }
+
+    h1.hover.redditname { overflow: visible !important; }
+}
+
+.RES {
+    &BigEditorPop {
+        background-color: rgba(black, 0);
+        line-height: inherit;
+        font-size: 11px;
+        font-family: verdana, arial, sans-serif;
+        box-shadow: none;
+        font-weight: 400;
+        color: @white-2;
+        border: none;
+        padding: 0;
+        height: inherit;
+        margin-left: 4px;
+        margin-top: 5px
+    }
+
+    &shortcutside, &DashboardToggle {
+        background-image: none!important;
+        border: none;
+        color: @white-2;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 0;
+        padding: 4px 6px 4px 0;
+        margin: 2px 6px 2px -4px;
+        text-align: left;
+        width: auto;
+
+        &:hover {
+            background-color: transparent;
+            color: @blue-3;
+        }
+    }
+
+    // BEGIN - User hover popover
+    &HoverInfoCard {
+        &::before, &::after { top: 0.2rem; }
+
+        &::before { border-color: transparent @black-3; }
+
+        &::after { border-color: transparent @black-1; }
+
+        #authorInfoToolTip .blueButton {
+            border: none;
+            border-radius: 4px;
+            padding: 0.3em 0.4em;
+            background-color: @red-2;
+            text-transform: capitalize;
+        }
+    }
+
+    &DialogSmall {
+        margin-top: 8px;
+        border: 2px solid @black-2;
+        box-shadow: 0 2px 3px rgba(black, 0.1);
+        background: @black-1;
+        color: @white-2;
+
+        > h3 {
+            border-bottom: none;
+            margin: 0;
+            padding: 8px;
+            height: 36px;
+            background-color: inherit;
+            color: inherit;
+        }
+    }
+
+    &HoverTitle {
+        .res-fancy-toggle-button {
+            border: none;
+            background-color: @green-2;
+            background-image: none;
+        }
+    }
+
+    &CloseButton::after {
+        content: "x";
+        border: none;
+        background-color: @red-1;
+        color: @white-3;
+        font-size: 1.5em;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            background-color: @red-2;
+            color: white;
+        }
+    }
+    // END - User hover popover
+}
+
+#RES {
+    &Shortcuts {
+        &EditContainer, &Sort, &Right, &Left, &Add, &Trash {
+            background-color: transparent !important;
+            color: rgba(white, 0.45) !important;
+            top: 1px !important;
+        }
+
+        &Viewport { margin-right: 381px; }
+
+        &EditContainer { margin-right: 312px; }
+    }
+
+    &commentNavToggle {
+        max-width: 98px;
+        overflow: hidden;
+        max-height: 15px;
+        background-color: @black-2;
+        transition: all 0.3s ease;
+
+        &:hover { max-width: 100%; }
+    }
+
+    &AccountSwitcherIcon {
+        position: relative;
+        top: -4px;
+    }
+
+    &MainGearOverlay {
+        background-color: @blue-2;
+        top: 0!important;
+        height: 26px!important;
+        border-radius: 0!important;
+    }
+
+    &SearchMenuItem {
+        border: 1px solid @blue-2;
+        border-radius: 1px;
+        background-color: @blue-3;
+
+        &:hover { background-color: @blue-3; }
+    }
+}

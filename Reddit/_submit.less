@@ -1,0 +1,194 @@
+.submit-page {
+    .infobar, .footer-parent { display: none !important }
+
+    .formtabs-content {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .roundfield {
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        width: 524px;
+        background-color: @black-1 !important;
+
+        .title {
+            color: #292f34;
+            text-transform: capitalize;
+        }
+    }
+
+    .searchpane {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .searchfacets {
+        border: 1px solid @white-3;
+        padding: 16px;
+        margin: 0;
+        background-color: white;
+        border-radius: 0 0 2px 2px;
+        max-width: none;
+    }
+
+    .morelink { top: 384px; }
+
+    .side { margin-top: 264px; }
+
+    #newlink.submit.content {
+        width: 524px;
+        margin: 0 auto;
+
+        form .spacer + .spacer { margin: 0; }
+
+        .side, .content h1 { display: none; }
+
+        .content { margin: 32px auto 0; }
+
+        .tabmenu.formtab {
+            position: relative;
+            padding: 0;
+            border: none;
+            background-color: @blue-2;
+            border-radius: 2px;
+            box-shadow: 0 1px 4px 0 rgba(black, 0.14);
+
+            .selected a {
+                font-size: 16px;
+                background-color: transparent;
+                color: white;
+                border-bottom: 4px solid;
+            }
+
+            a {
+                padding: 16px;
+                width: 262px;
+                display: inline-block;
+                text-align: center;
+                color: rgba(white, 0.7);
+                text-transform: uppercase;
+                font-weight: 700;
+                transition: all .15s ease;
+                font-size: 16px;
+                border: none;
+                border-bottom: 4px solid transparent;
+
+                &:hover { color: white; }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            height: auto;
+            margin-top: 16px;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-family: Lato, arial, sans-serif;
+            font-size: 17px;
+            padding: 16px;
+            text-align: left;
+            margin-bottom: 48px;
+
+            &::after {
+                content: " your post to Reddit.";
+                text-transform: none;
+            }
+
+            &:hover { box-shadow: 0 2px 12px rgba(black, 0.48); }
+        }
+    }
+
+    #url-field button { background-color: #c3cfd6; }
+
+    #header {
+        height: 156px;
+
+        &-bottom-left {
+            top: 56px;
+            left: 50%;
+            margin-left: -262px;
+        }
+
+        .pagename a { display: none; }
+    }
+
+    #search {
+        position: absolute;
+        top: -128px;
+        left: 36px;
+        padding: 0;
+
+        input[type=text] {
+            min-width: 320px;
+            width: 320px;
+        }
+    }
+
+    #previoussearch {
+        label {
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            padding: 12px;
+            background: #f9f9f9;
+            z-index: -1;
+            border-radius: 0 0 2px 2px;
+            box-shadow: 0 2px 1.5px 0 rgba(black, .12), 0 0 4px 0 rgba(black, .12);
+            cursor: pointer;
+            margin-top: -2px;
+        }
+
+        p a#search_showmore {
+            position: absolute;
+            left: 324px;
+            top: 8px;
+            width: 22px;
+            height: 24px;
+            background-image: url(https://i.imgur.com/piXtXh1.png);
+            background-repeat: no-repeat;
+            background-position: -49px -168px;
+            overflow: hidden;
+            font-size: 0;
+        }
+    }
+}
+
+.submit_text {
+    &.enabled.roundfield {
+        background-color: @blue-2;
+
+        .md { color: white; }
+    }
+
+    ol, ul { margin-left: -1em; }
+}
+
+.submit.content .info-notice {
+    background-color: @white-3;
+    padding: 16px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.submitfacets {
+    .title { margin: 0; }
+
+    h4.title {
+        color: @white-1;
+        margin: 0 0 8px;
+
+        &:first-letter { text-transform: capitalize; }
+    }
+
+    .list { margin: 0; }
+
+    .facet.count {
+        color: @white-1;
+        font-weight: 400;
+
+        &:hover { text-decoration: none; }
+    }
+}

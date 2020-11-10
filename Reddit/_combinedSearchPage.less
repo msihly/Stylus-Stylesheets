@@ -1,0 +1,120 @@
+.combined-search-page {
+    > .content {
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: @black-1 !important;
+    }
+
+    .search-result {
+        margin: 16px 0 20px;
+
+        &-group {
+            max-width: none;
+            min-width: 0;
+            padding: 0;
+
+            & &-header {
+                height: 36px;
+                line-height: 38px;
+                margin: 0;
+                border: none;
+            }
+
+            .search-header-label {
+                text-transform: capitalize;
+                color: @white-1;
+                font-family: Lato, Arial, sans-serif;
+                font-size: 18px;
+                padding-bottom: 2px;
+            }
+
+            .search-menu {
+                margin-right: 16px;
+
+                .dropdown.lightdrop .selected {
+                    color: @white-1;
+                    text-decoration: none;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+            }
+
+            footer .nav-buttons { margin: 0 0 16px 0; }
+        }
+
+        &-listing &-subreddit {
+            display: inline-block;
+            width: calc(33% - 8px);
+            max-width: 360px;
+            height: 184px;
+            margin: 0 16px 0 0;
+            padding: 16px;
+            border: none;
+            border-radius: 2px;
+            vertical-align: top;
+            overflow: hidden;
+
+            &:last-of-type { margin-right: -20px; }
+        }
+
+        &-subreddit {
+            .search-result {
+                &-body { padding: 0; }
+                &-meta { padding: 4px 0; }
+            }
+
+            .search-subscribe-button {
+                border-radius: 2px;
+
+                .add, .add:active {
+                    background-color: @blue-3;
+                    border: none;
+                    border-radius: 2px;
+                }
+
+                .remove, .remove:active {
+                    background-color: transparent;
+                    border: 1px solid @white-1;
+                    color: @white-1;
+                }
+            }
+        }
+
+        &-meta span.search-time { display: none; }
+
+        &.has-thumbnail > .thumbnail {
+            margin-left: 0;
+            margin-right: 16px
+        }
+
+        .search-result {
+            &-header .search-title { color: @blue-3; }
+
+            &-meta { color: @white-1; }
+        }
+
+        a, a > mark, & &-header .search-title, .search-comments { color: @blue-3; }
+    }
+
+    .search-submit-button {
+        position: relative;
+        left: -42px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background: transparent url(https://i.imgur.com/piXtXh1.png) -64px -96px;
+        box-shadow: none;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover { background-color: rgba(@grey-5, 0.2); }
+
+        .search-icon { display: none; }
+    }
+
+    .res-searchHelper-searchPageTabs & #previoussearch .res-search-pane {
+        background-color: @black-1 !important;
+    }
+}

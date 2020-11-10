@@ -1,0 +1,158 @@
+/* ==UserStyle==
+@name           Stylus
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Stylus editor
+@author         Mohamed Sihly
+@preprocessor	less
+==/UserStyle== */
+
+@-moz-document url-prefix("chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne") {
+    @black-1: rgb(15, 15, 15);
+    @black-2: rgb(30, 30, 30);
+    @black-3: rgb(45, 45, 45);
+
+    @grey-1: rgb(60, 60, 60);
+    @grey-2: rgb(85, 85, 85);
+    @grey-3: rgb(110, 110, 110);
+    @grey-4: rgb(130, 130, 130);
+    @grey-5: rgb(155, 155, 155);
+
+    @white-1: rgb(200, 200, 200);
+    @white-2: rgb(215, 215, 215);
+    @white-3: rgb(230, 230, 230);
+
+    @blue-1: rgb(40, 70, 150);
+    @blue-2: rgb(20, 90, 170);
+    @blue-3: rgb(0, 115, 190);
+    @blue-2-svg: invert(26%) sepia(90%) saturate(1460%) hue-rotate(196deg) brightness(85%) contrast(93%);
+
+    @green-1: rgb(10, 130, 10);
+    @green-2: rgb(40, 160, 40);
+    @green-3: rgb(70, 190, 70);
+    @green-1-svg: invert(16%) sepia(100%) saturate(7103%) hue-rotate(137deg) brightness(102%) contrast(92%);
+
+    @orange-1: rgb(200, 75, 0);
+    @orange-2: rgb(200, 110, 0);
+    @orange-3: rgb(210, 130, 0);
+    @orange-2-svg: invert(42%) sepia(76%) saturate(781%) hue-rotate(1deg) brightness(94%) contrast(104%);
+
+    @purple-1: rgb(90, 15, 90);
+    @purple-2: rgb(115, 35, 115);
+    @purple-3: rgb(140, 55, 140);
+
+    @red-1: rgb(130, 10, 10);
+    @red-2: rgb(160, 15, 15);
+    @red-3: rgb(185, 50, 50);
+    @red-4: rgb(205, 70, 70);
+    @red-1-svg: invert(12%) sepia(55%) saturate(4164%) hue-rotate(346deg) brightness(91%) contrast(109%);
+    @red-2-svg: invert(14%) sepia(45%) saturate(6703%) hue-rotate(351deg) brightness(85%) contrast(101%);
+
+    @yellow-1: rgb(175, 150, 40);
+    @yellow-2: rgb(190, 170, 10);
+    @yellow-3: rgb(215, 190, 0);
+
+	body {
+		background: @black-1;
+		color: @white-3;
+		font-size: 16px;
+	}
+
+	input, select {
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.3em 0.4em;
+		background: @black-3;
+        color: white;
+        font-size: 1em;
+        line-height: 1;
+
+        &:extend(select);
+
+        &:not([type]) { &:extend(input, select); }
+
+        &:disabled {
+            background: @grey-1;
+            color: @grey-5;
+        }
+	}
+
+	button {
+        padding: 0.5rem;
+		margin: 0 0.1rem;
+        border: none;
+        border-radius: 0.5rem;
+		background: @blue-2;
+		color: white;
+        font-size: 1em;
+        font-weight: 500;
+		text-align: center;
+		transition-duration: 0.2s;
+		cursor: pointer;
+
+        &:hover, &:not(:disabled):hover { background: @blue-2; }
+
+        &:disabled {
+            background-color: @grey-2;
+            color: @grey-5;
+        }
+	}
+
+	input[type="checkbox"] {
+        background: @grey-1;
+        color: white;
+
+        &:not(.slider) {
+            border: 1px solid @grey-1;
+            border-radius: 0.2rem;
+            margin-right: 0.3rem !important;
+            height: 1em;
+            width: 1em;
+            background-color: @grey-1;
+
+            &:hover {
+                border-color: @grey-2;
+                background-color: @grey-2;
+            }
+
+            + .svg-icon.checked {
+                position: relative;
+                display: flex;
+                fill: @white-3;
+            }
+        }
+
+        &.slider {
+            background-color: #111;
+            border-color: #333;
+            border-radius: 4px;
+        }
+
+        label > & {
+            padding-left: 0.3rem;
+        }
+    }
+
+    #header {
+        border-right: 1px solid @grey-1;
+
+        .options {
+            .option {
+                display: flex;
+                flex-flow: row;
+                margin: 0.2rem 0;
+            }
+        }
+    }
+
+    .CodeMirror {
+        border: 1px solid @black-3;;
+        border-radius: 0.3rem;
+    }
+
+    .resize-grip {
+        border: none;
+
+        &::after { border-top: 2px dotted @grey-3; }
+    }
+}
